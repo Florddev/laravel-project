@@ -63,6 +63,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur delectus deleniti dolorem libero quam quia repudiandae soluta sunt ut, vel? Ad aspernatur doloribus ducimus maiores, necessitatibus odio omnis quam quos!</p>
                             </div>
                         </div>
+                        <livewire:new-post></livewire:new-post>
                         {{-- Reste de la page --}}
                         {{ $slot }}
                     </div>
@@ -107,8 +108,8 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="font-bold">Hart Hagerty</div>
-                                    <div class="text-sm opacity-50">@hhagertyy</div>
+                                    <div class="font-bold">{{ Auth::user()->name }}</div>
+                                    <div class="text-sm opacity-50">{{ Auth::user()->email }}</div>
                                 </div>
                             </a>
                         </li>
